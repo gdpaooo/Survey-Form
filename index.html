@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avion School - Form</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="title">Library Membership Application</h1>
+            <p id="description">Use this form for the application of library card.</p>
+        </div>
+        <div class="container">
+            <form method="get" id="survey-form">
+                <!-- Name -->
+                <label for="name" id="name-label">1. Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"/>
+                <div id="in-between-space"></div>
+                <!-- Email -->
+                <label for="email" id="email-label">2. Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email"/>
+                <div id="in-between-space"></div>
+                <!-- Age -->
+                <label for="age" id="number-label">3. Age:</label>
+                <input type="number" id="number" name="age" required placeholder="Enter your age" min="18" max="100" />
+                <div id="in-between-space"></div>
+                <!-- Radio Button -->
+                <label for="condition" id="radio-label">4. Type of application:</label>
+                <div id="checkbox-container">
+                    <input type="radio" id="radio" name="condition" value="new"> New
+                </div>
+                <div id="checkbox-container">
+                    <input type="radio" id="radio" name="condition" value="renewal"> Renewal
+                </div>
+                <div id="in-between-space"></div>
+                <!-- Checkbox -->
+                <label id="checkbox-label">5. Please choose the type of books you plan to borrow from the library:</label>
+                <div id="checkbox-container">
+                    <input type="checkbox" id="checkbox" name="book" value="General works"> General works  <br />
+                    <input type="checkbox" id="checkbox" name="book" value="Philosophy and psychology"> Philosophy and psychology <br />
+                    <input type="checkbox" id="checkbox" name="book" value="Religion"> Religion <br />
+                    <input type="checkbox" id="checkbox" name="book" value="Social sciences"> Social sciences <br />
+                    <input type="checkbox" id="checkbox" name="book" value="Languange"> Languange <br />
+                </div>
+                <div id="checkbox-container">
+                    <input type="checkbox" id="checkbox" name="book" value="Natural sciences and mathematics"> Natural sciences and mathematics  <br />
+                    <input type="checkbox" id="checkbox" name="book" value="Technology"> Technology <br />
+                    <input type="checkbox" id="checkbox" name="book" value="The arts"> The arts <br />
+                    <input type="checkbox" id="checkbox" name="book" value="Literature and rhetoric"> Literature and rhetoric <br />
+                    <input type="checkbox" id="checkbox" name="book" value="History, biography, and geography"> History, biography, and geography <br />
+                </div>
+                <div id="in-between-space"></div>
+                <!-- Dropdown -->
+                <label for="frequency" id="dropdown-label">6. How often you plan to borrow books from the library?</label>
+                <select name="frequency" id="dropdown">
+                    <option selected disabled hidden>Select option</option>
+                    <option value="Everyday">Everyday</option>
+                    <option value="Everyweek">Everyweek</option>
+                    <option value="Bi-weekly">Bi-weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Seldom">Seldom</option>
+                </select>
+                <div id="in-between-space"></div>
+                <!-- Comments or Suggestions -->
+                <label for="comment" id="comment-label">7. Comments or Suggestions:</label>
+                <textarea name="comment" id="comments" maxlength="150" required placeholder="Enter your comment/suggestion here..."></textarea>
+                <div id="in-between-space"></div>
+                <!-- Submit Button -->
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+        </div>    
+    </body>
+</html>
